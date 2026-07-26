@@ -1,6 +1,0 @@
-MTSScale=0
-MIDIChan=0
-CurBank=1
-CurPatch=0
-ReverbMix=11
-ReverbTime=69
