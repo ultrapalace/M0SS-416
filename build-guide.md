@@ -15,8 +15,8 @@
 | 1       | M2 x 4mm screw, T8, Silver |
 | 1       | SD Card |
 | 5       | 6-32 x 3/8" screw, Hex |
-| 4       | Silicon Feet (not pictured) |
-| 1       | Aluminum enclosure (not pictured) |
+| 4       | Silicon Feet |
+| 1       | Aluminum enclosure |
 
 <br/>
 
