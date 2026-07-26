@@ -1,9 +1,7 @@
-# M0SS-101 BUILD GUIDE
-( last updated November 17, 2025 )
+# M0SS-416 BUILD GUIDE
+( last updated July 26, 2026 )
 
 ## Here are the contents of the kit
-
-<img src="images/image12.jpg" width="600">
 
 | Quantity | Item |
 |---------|------------------------------------------------|
@@ -12,11 +10,10 @@
 | 1       | 12p Flat Flex cable |
 | 1       | Encoder + nut |
 | 1       | Encoder Knob |
-| 1       | DC jack |
-| 1       | 1/4" Audio jack + washer + nut |
-| 1       | USB A jack |
 | 1       | 7mm Standoff |
-| 2       | M2 x 4mm screw, T8 |
+| 1       | M2 x 4mm screw, T8, Black |
+| 1       | M2 x 4mm screw, T8, Silver |
+| 1       | SD Card |
 | 5       | 6-32 x 3/8" screw, Hex |
 | 4       | Silicon Feet (not pictured) |
 | 1       | Aluminum enclosure (not pictured) |
@@ -29,14 +26,13 @@
 - Solder
 - A T8 torx bit and driver
 - A 2mm Allen Wrench or 2mm hex bit and driver
-- Super Glue (optional)
 
 <br/>
 
 ## STEP 1: Add solder to the 1/8" jacks
 - These parts were sometimes not soldered well at the manufacturer. Add solder to the 6 tabs (3 tabs on each 1/8" jack) to reinforce them. During this process be VERY cautious to not melt the plastic parts of the jack, nor any of the surrounding parts, like LEDs. You can optionally add one drop of super glue to add strength, place it at the base of the part near the outside edge of the board, but be very careful not to add more then 1 drop, or you risk glueing the part shut!
 
-<img src="images/image21.jpg" width="600">
+<img src="images/image1.JPG" width="600">
 
 <br/>
 
@@ -44,7 +40,7 @@
 
 - Using pliers, carefully snap off the edge rails. There are rails on the left and right sides of each PCB, 6 edges in total to be removed.
 
-<img src="images/image3.jpg" width="600">
+<img src="images/image2.JPG" width="600">
 
 <br/>
 
@@ -56,43 +52,41 @@
 - Solder one pin of the encoder, and check that it is seated correctly.  
 - Proceed to solder all the pins, and then the lugs.
 
-<img src="images/image14.jpg" width="600">
+<img src="images/image3.JPG" width="600">
 
 <br/>
 
-## STEP 4: Place and solder the DC jack, audio jack and USB jack
+## STEP 4: Install the standoff
 
-- These parts are placed on the top side of the main PCB, look for the footprint outlines to confirm, these are installed on the opposite side as the encoder.  
-- Start with the DC jack, and solder one pin, then adjust the position of the jack to be as square and straight as possible, using the white footprint outline, before soldering the remaining 2 pins.  
-- Now place, and then solder, the USB jack and the audio jack.
+- The standoff goes on the back side of the LED PCB.  
+- Use the black M2 x 4mm screw, and be careful to not over tighten it. ⅛ of a turn past hand-tight is great.
 
-<img src="images/image19.jpg" width="600">
+<img src="images/image4.JPG" width="600">
 
 <br/>
 
-## STEP 5: Install the standoff
+## STEP 5: Shape the large Flat Flex Cable (FFC)
 
-- The standoff goes on the same side as the encoder, the back side of the main PCB.  
-- Use a M2 x 4mm screw, and be careful to not over tighten it. ⅛ of a turn past hand-tight is great.
+- On one end of the large FFC, using your thumbs, gently create a concave bend in the blue-section of the cable.
+<img src="images/image5.JPG" width="600">
 
-<img src="images/image8.jpg" width="600">
 
 <br/>
 
 ## STEP 6: Install the Flat Flex Cables (FFCs)
 
-- Install the large FFC onto the back side of the front panel board. The large FFC connector is a flip-lock type. Using a small tool or a fingernail, lift the black lock up and back to fully open the connector.   
+- Install the non-shaped end of the large FFC onto the back side of the front panel board. The large FFC connector is a flip-lock type. Using a small tool or a fingernail, lift the black lock up and back to fully open the connector.   
 - Insert the large FFC with the blue stripe up. Ensure it is fully seated and square, then close the lock.
 
 <br/>
 
-<img src="images/image18.jpg" width="600">
+<img src="images/image6.JPG" width="600">
 
-- Install the small FFC onto the LED board. The small FFC connector is a drawer-type. Using a small tool or a fingernail, gently pull laterally on the black lock to open it like a drawer.  
+- Install the small FFC onto the LED board. The small FFC connector is also a flip-lock type.
 - Insert the small FFC with the blue stripe up, sliding it under the lock, and gently wiggle it into place. This may take some patience, and it is ok to try the other end, if you are struggling.  
-- Lock the connector by pressing the drawer back into the closed position.
+- Close the lock.
 
-<img src="images/image11.jpg" width="600">
+<img src="images/image7.JPG" width="600">
 
 <br/>
 
@@ -100,31 +94,20 @@
 
 - Thread the large FFC through the large cutout in the LED board, and bring the 2 boards together back-to-back.
 
-<img src="images/image6.jpg" width="600">
+<img src="images/image8.JPG" width="600">
 
-- Holding the main board with the encoder facing down toward the other boards, thread the small FFC through the smaller slit in the main board, and thread the large FFC through the wide slit in the main board. Pass the encoder through the large round hole in the 2 other boards
-
-<img src="images/image1.jpg" width="600">
-<img src="images/image15.jpg" width="600">
-<img src="images/image13.jpg" width="600">
-
-- On the front panel board, install the encoder nut, and an M2 x 4mm screw to the standoff. When tightening the encoder nut, exercise caution to not scratch the panel, and to not damage any adjacent buttons. Using a plastic socket is ideal.
-
-<img src="images/image17.jpg" width="600">
-
-<br/>
-
-## STEP 8: Connect the FFCs to the main board.
-
+- Holding the main board with the encoder facing down toward the other boards, pass the encoder through the large round hole in the 2 other boards.
+- Install the silver M2 x 4mm screw through the small hole on the Main PCB, to the standoff on the LED board.
+- On the front panel board, install the encoder nut. When tightening the encoder nut, exercise caution to not scratch the panel, and to not damage any adjacent buttons. Using a plastic socket is ideal.
 - Use the same procedure in step 5 to install both FFCs to their respective connectors on the main board.
 
-
-<img src="images/image20.jpg" width="600">
-<img src="images/image16.jpg" width="600">
+<img src="images/image10.JPG" width="600">
+<img src="images/image11.JPG" width="600">
+<img src="images/image9.JPG" width="600">
 
 <br/>
 
-## STEP 9: Install the enclosure
+## STEP 8: Install the enclosure
 
 - Place the PCB assembly into the enclosure, inserting the jacks first.  
 - Install the 4 large black 6-32 x 3/8" screws.  
@@ -132,45 +115,41 @@
 - Install the knob onto the encoder, looking for the irregularity inside the knob, which mates with the flat side of the encoder shaft.  
 - Optionally, affix the 4 adhesive feet, on the bottom of the enclosure, at each corner.
 
-<img src="images/image5.jpg" width="600">  
-<img src="images/image7.jpg" width="600">
-<img src="images/image9.jpg" width="600">
+<img src="images/image12.JPG" width="600">  
+<img src="images/image13.JPG" width="600">
 
 <br/>
 
 Here some details on the I/O:
-- Power input is 9v DC, center negative. M0SS-101 draws up to 800mA with a USB Device connected.
-- MIDI jack 1 (closest to the top) - MIDI input, Type-A.
-- MIDI jack 2 (closest to the bottom) - MIDI thru (soft-thru), Type-A.
-- Audio output - 1/4" Unbalanced line level. This is actually a TRS jack but the ring is unconnected.
+- Power input is 9v DC, center negative. M0SS-416 draws up to 800mA with a USB Device connected.
+- MIDI jack 1 (on the left side) - MIDI input, Type-A.
+- MIDI jack 2 (on the rightside) - MIDI thru (soft-thru), Type-A.
+- Audio output - 1/4" Unbalanced line level stereo.
 - USB - USB-A Host, it is safe to draw up to 500mA (USB Spec). It should work with any class compliant MIDI Device, but will not work with another USB Host (like a computer). 
+
+<br/>
+
+## STEP 9: Flash the SD Card files, and instal the card
+
+- Download `sdcard.zip` from this repository.
+- Unzip the contents, this will produce a directory called `sdcard`
+- Copy all the contents of `sdcard` (not the directory itself) to your SD Card
+- Eject the SD Card safely from your computer
+- Holding the SD Card upside down, insert it into the rectangular slot on the right-hand side of the M0SS-416.
+- Using a small plastic tool, or a fingernail, gently depress the SD Card deeper into the slot, until you perceive a 'click' sound. This is the card locking into place.
 
 <br/>
 
 ## STEP 10: First boot
 
-- Apply power to the M0SS-101.
-- Some lights should come on.
-- Pressing the encoder should produce a 110hz (A2) square wave, and trigger some more lights.
+- Apply power to the M0SS-416.
+- After about 4 seconds, lights on the front panel should twinkle for a few more seconds as it boots.
+- Pressing the encoder should produce a square wave.
 - Remove power.
-- Due to an initialization bug, make sure you do NOT initiate the test sequence (STEP 11) the very first time you power M0SS-101 on. Power it on at least once normally, before initiating Test Mode. This just triggers the processor to correctly initialize the presets in flash memory. If you do miss this step, and experience problems, simply initiate a factory reset to fix, instructions on how to do that are in the User Manual.
 
 <br/>
 
-## STEP 11 (optional): Test your M0SS-101
-
-- While holding the “ALT” and “VOL” buttons, apply power to the M0SS-101.  
-- Confirm that all the LEDs are glowing yellow.  
-- Press each button, and confirm that the LEDs turn red.  
-- Connect the audio jack to an amplifier or a scope, and confirm that a 110hz (A2) square wave is present.  
-- Connect a MIDI device to the USB-A jack, send some MIDI, and confirm that the LEDs flash blue.  
-- Connect a MIDI device to the ⅛” MIDI input jack (the one closer to the back), send some MIDI, and confirm that the LEDs flash blue.  
-- Turn the encoder clockwise, and confirm that the LEDs flash green.  
-- Turn the encoder counter-clockwise, and confirm that the LEDs flash blue.
-
-<br/>
-
-## STEP 12: Construct the manual
+## STEP 11: Construct the manual
 
 - I found this cute diagram online, use it to fold your manual into a tiny book.
 
@@ -178,15 +157,4 @@ Here some details on the I/O:
 
 - If you have done it right, it should look like this
 
-<img src="images/image23.jpg" width="600">
-
-
-
-
-
-
-
-
-
-
-
+<img src="images/image14.JPG" width="600">
