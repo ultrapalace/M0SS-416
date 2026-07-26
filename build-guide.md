@@ -99,7 +99,7 @@
 - Holding the main board with the encoder facing down toward the other boards, pass the encoder through the large round hole in the 2 other boards.
 - Install the silver M2 x 4mm screw through the small hole on the Main PCB, to the standoff on the LED board.
 - On the front panel board, install the encoder nut. When tightening the encoder nut, exercise caution to not scratch the panel, and to not damage any adjacent buttons. Using a plastic socket is ideal.
-- Use the same procedure in step 5 to install both FFCs to their respective connectors on the main board.
+- Use the same procedure in step 5 to install both FFCs to their respective connectors on the main board. The shaped end of the large FFC will help navigate past the small FFC connector which is very close to the connector for the large FFC.
 
 <img src="images/image10.JPG" width="600">
 <img src="images/image11.JPG" width="600">
