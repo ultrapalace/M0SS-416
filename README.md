@@ -1,2 +1,3 @@
 # M0SS-416
-M0SS-416 synthesizer documentation and file repository
+
+Join our Discord server: https://discord.gg/w7DQAhY46v
