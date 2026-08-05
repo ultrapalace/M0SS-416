@@ -2,7 +2,7 @@
 title: "M0SS-416 User Manual"
 ---
 
-# Introduction
+# Introduction {.page-break-before}
 
 The M0SS-416 is the fourth in the line of M0SS synthesizers. It is a DX7 emulator, which means that its synthesis engine emulates that of the DX7s to a very high degree. It is based on an open source project called Dexed, but also builds on the work of another open source project called MiniDexed, which makes it possible to run Dexed on a microcontroller.
 
@@ -113,7 +113,7 @@ Beyond basic frequency relationships, the DX7 provides several parameters that c
 
 Time variation is handled by the DX7’s detailed envelope generators, with four rates and four levels per operator, allowing precise shaping of both amplitude and modulation over time. Unlike subtractive synths, this means the harmonic content itself evolves dynamically. The global section adds a pitch envelope generator for pitch sweeps and a flexible LFO with parameters like frequency, delay, waveform, pitch modulation depth (PMD), and amplitude modulation depth (AMD). There is also key sync for resetting LFO phase per note. Together, these parameters allow the DX7 to produce highly expressive, time-evolving sounds—where timbre is not filtered after generation, but instead constructed and animated directly through operator interactions.
 
-## Front Panel Overview
+## Front Panel Overview {.page-break-before}
 
 ![M0SS-416 front panel overview](images/M0SS-416-FACE-DIAGRAM-2.png)
 
