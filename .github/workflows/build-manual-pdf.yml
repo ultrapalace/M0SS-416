@@ -33,7 +33,7 @@ jobs:
           output_dir: "."
           css_file: "manual.css"
           table_of_contents: "true"
-          include_metadata: "true"
+          include_metadata: "false"
           output_filename: "M0SS-416-manual"
           pdf_options: '{"format":"A4","margin":{"top":"50px","right":"50px","bottom":"50px","left":"50px"},"printBackground":true}'
 
