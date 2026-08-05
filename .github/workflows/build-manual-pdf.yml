@@ -26,16 +26,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Convert Markdown to PDF
-        uses: narthanaj/markdown-to-pdf-action@v2.0.0
+      - name: Build standalone HTML
+        uses: docker://pandoc/core:3.10
         with:
-          markdown_file: "M0SS-416-manual.md"
-          output_dir: "."
-          css_file: "manual.css"
-          table_of_contents: "true"
-          include_metadata: "false"
-          output_filename: "M0SS-416-manual"
-          pdf_options: '{"format":"A4","margin":{"top":"50px","right":"50px","bottom":"50px","left":"50px"},"printBackground":true}'
+          args: >-
+            M0SS-416-manual.md
+            -s --toc --number-sections
+            --css manual.css
+            --embed-resources
+            -o M0SS-416-manual.html
+
+      - name: Print PDF
+        run: |
+          google-chrome \
+            --headless \
+            --disable-gpu \
+            --no-sandbox \
+            --print-to-pdf=M0SS-416-manual.pdf \
+            --print-to-pdf-no-header \
+            "file://$PWD/M0SS-416-manual.html"
 
       - name: Commit PDF
         if: github.event_name != 'pull_request'
