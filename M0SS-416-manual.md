@@ -1,6 +1,8 @@
-# M0SS-416 User Manual
+---
+title: "M0SS-416 User Manual"
+---
 
-## Introduction
+# Introduction
 
 The M0SS-416 is the fourth in the line of M0SS synthesizers. It is a DX7 emulator, which means that its synthesis engine emulates that of the DX7s to a very high degree. It is based on an open source project called Dexed, but also builds on the work of another open source project called MiniDexed, which makes it possible to run Dexed on a microcontroller.
 
@@ -12,7 +14,7 @@ We have done our best to provide a balance between the classic DX7 workflow, the
 
 We hope that M0SS-416 provides many years of inspiration to both DX7 power users looking to go screen-less and portable, and for new DX7 acolytes, scrolling built-in presets, downloading patch banks that they find online, and beginning to tweak and modify existing patches, and maybe one day building new patches from scratch.
 
-### Connections
+## Connections
 
 The M0SS-416 is powered by a standard DC barrel jack, often used for guitar pedals. It takes 9V center negative power, provided at the port at the top. It draws ~200 mA, plus whatever power is drawn by a connected USB MIDI controller.
 
@@ -24,37 +26,37 @@ The M0SS-416 also includes MIDI TRS type A thru, located on the right side of th
 
 An SD Card is accessible on the right side of the device. This SD Card contains firmware, patches, microtuning scales, and other configuration files for the M0SS-416. To remove the SD Card, ensure power to the M0SS-416 is OFF, then using a small plastic tool, or a fingernail, depress the SD Card inward untill you hear a 'click', then release the SD Card and it will eject. To re-install the SD Card, re-insert it into the slot, and depress it until you hear a click, release the SD Card and it will now be locked in place.
 
-### Extra Resources
+## Extra Resources
 
 - M0SS Discord Server: [https://discord.gg/SX8BX6Hhq4](https://discord.gg/SX8BX6Hhq4)
 - Ultrapalace Youtube Channel: [https://www.youtube.com/@ultrapalace](https://www.youtube.com/@ultrapalace)
 - Ultrapalace Website: [https://www.ultrapalace.com](https://www.ultrapalace.com)
 
-## Getting Started
+# Getting Started {.page-break-before}
 
 Using a standard guitar pedal power adapter, plug in your M0SS-416. It will boot immediately (there is no power ON/OFF switch for the device). Connect a MIDI controller either via TRS or USB jacks, and connect the audio out to a destination.
 
 By default, the device is set to respond to all MIDI channels (Omni), so simply press a key on your controller and hear the response.
 
-### How to Use the Interface
+## How to Use the Interface
 
 The M0SS family of products has a unique way of interacting with its parameters, which is what allows us to make the devices so small. Each button on the interface corresponds to a parameter, labelled above or beside the button. To select the parameter, simply press the button. There are also shift parameters, secondary functions for buttons indicated by labels in smaller text. To access these, hold the ALT button before pressing the button you want to select.
 
 Parameters come in three types: Selectors, Numeric Entries, and Switches. Modifying these parameters works differently.
 
-### Editing Selectors
+## Editing Selectors
 
 Selectors are indicated by a row of LEDs below or beside the button, each with a label corresponding to the option. Repeated presses of this button will cycle through the available options for this parameter, indicated by the LEDs changing.
 
-### Editing Numeric Entries
+## Editing Numeric Entries
 
 Numeric Entry parameters hold a discrete numeric value. Once a Numeric Entry parameter is selected, the bottom rows of LEDs on the unit will light, indicating the corresponding value. While that Numeric Entry is selected, simply rotate the encoder to change its value.
 
-### Editing Switches
+## Editing Switches
 
 Editing switches works in mostly the same way as Selectors, but these parameters only have 2 values: On and Off. Many Switches will have an LED indicating its state, a lit LED means On, a non-lit LED means Off. Repeated presses of the button will toggle its value. If the Switch lacks a dedicated LED, then its state will be shown on the bottom LED rows, and will operate like a Numeric Entry, where 0 means Off, 1 means ON and turning the encoder will toggle the value.
 
-### MIDI Controls
+## MIDI Controls
 
 M0SS-416 accepts many MIDI controls, including velocity, pitch bend, program change, after touch and the following CCs:
 
@@ -80,7 +82,7 @@ M0SS-416 accepts many MIDI controls, including velocity, pitch bend, program cha
 - CC126 Mono On: mono mode.
 - CC127 Poly On: poly mode.
 
-### MIDI Learn
+## MIDI Learn
 
 To map an external controller’s CC knobs to a parameter in your M0SS unit, follow the steps below.
 
@@ -93,17 +95,17 @@ To map MIDI AFTERTOUCH, hold a note on the keyboard, perform steps 1 and 2, then
 
 To map velocity, perform steps 1 and 2 then press any key on the keyboard.
 
-### MIDI SYSEX
+## MIDI SYSEX
 
 M0SS-416 will receive parameter modifications via DX7 compatible MIDI SYSEX messages. This allows you to connect the M0SS-416 to your computer using a MIDi TRS cable, and use an application like DEXED to controll all the parameters in the engine.
 
-### Changing the Patch
+## Changing the Patch
 
 The M0SS-416 comes pre-loaded with a library of 6 banks of presets (each with 32 voices) from the classic DX7 sound cartridges.
 
 Press the LIB button to enter Bank Load Mode. The Numeric LEDs will show the Patch number (0-31) in Blue LEDs, and the Operator LEDs will display the Bank Number (1-6) in blue LEDs. Turn the encoder to scroll through the voices and banks. Press any other key to leave Bank Load Mode.
 
-## General Description
+# General Description {.page-break-before}
 
 The DX7 synthesis engine is based on frequency modulation (FM) synthesis, where six sine-wave operators interact through one of 32 fixed algorithms. Each operator has a frequency setting that can run in ratio mode (tracking keyboard pitch) or fixed mode (absolute frequency in Hz), along with coarse and fine tuning and a small detune offset. These parameters define the harmonic relationship between operators — integer ratios produce harmonic, “musical” tones, while non-integer ratios introduce inharmonic or metallic textures. Each operator also has an output level, which in FM directly controls modulation depth (for modulators) or amplitude (for carriers), making it one of the most sensitive and important parameters in shaping the sound.
 
@@ -111,7 +113,7 @@ Beyond basic frequency relationships, the DX7 provides several parameters that c
 
 Time variation is handled by the DX7’s detailed envelope generators, with four rates and four levels per operator, allowing precise shaping of both amplitude and modulation over time. Unlike subtractive synths, this means the harmonic content itself evolves dynamically. The global section adds a pitch envelope generator for pitch sweeps and a flexible LFO with parameters like frequency, delay, waveform, pitch modulation depth (PMD), and amplitude modulation depth (AMD). There is also key sync for resetting LFO phase per note. Together, these parameters allow the DX7 to produce highly expressive, time-evolving sounds—where timbre is not filtered after generation, but instead constructed and animated directly through operator interactions.
 
-### Front Panel Overview
+## Front Panel Overview
 
 ![M0SS-416 front panel overview](images/M0SS-416-FACE-DIAGRAM-2.png)
 
@@ -123,7 +125,7 @@ Time variation is handled by the DX7’s detailed envelope generators, with four
 6. The ALT button. Use to access parameters written in smaller font next to or below buttons.
 7. The numeric LED display, showing values from 0 .. 99. The top row shows the 10s position (0, 10, 20, ... 90) and the bottom row shows the 1’s position (0, 1, 2, ... 9). Together they represent an integer from 0 to 99.
 
-### Operators
+## Operators
 
 The DX7 synthesis engine consists of 6 operators in one of 32 configurations. These configurations are called algorithms. The following diagram describes these 32 algorithms.
 
@@ -133,13 +135,13 @@ To select the Algorithm for your patch, press ALGO (ALT + OP). The current algor
 
 The EN parameter enables/disables the current Operator. A disabled operator will have a Blue LED in the Operator LED row, and when it is selected, all the Operator controls will show Blue LEDs to indicate that you currently have a disabled operator selected.
 
-### Envelope Generators
+## Envelope Generators
 
 The DX7 rate/level style envelope generator is more advanced then a typical ADSR. On M0SS-416, you will see level (LVL) and RATE controls. RATE is the ALT function for these buttons. This diagram helps to describe how they function.
 
 ![DX7 envelope diagram](images/DX7-envelope.png)
 
-### Building a Patch
+## Building a Patch
 
 The DX7 engine is very complex, and well documented elsewhere, so I will not attempt to explain it here. Suffice to say there is a 1:1 correlation between the DX7 and the M0SS-416.
 
@@ -166,7 +168,7 @@ Since the M0SS-416 can only communicate positive integers from 0..99, there are 
 
 
 
-### Master FX
+## Master FX
 
 The M0SS-416 has 3 Master FX: Reverb, a low-pass Filter, and a compressor.
 
@@ -176,13 +178,13 @@ Controls for the low-pass filter are accessible with MIDI CCs (see [MIDI Control
 
 The compressor can be turned on and off by editing a file on the SD Card called Performance.ini
 
-### Polyphony
+## Polyphony
 
 The M0SS-416 has 16 voices of polyphony, meaning it can generate 16 notes at once, each on its own voice. There is a voice stealing algorithm which determines what happens when more than 16 notes are playing at once. When the 17th note is started, it will look for the oldest note, giving preference to notes which are not currently held (but are still in sustain), and it will prune that voice, meaning it will stop playing the note it is currently playing, and begin to play the new pitch.
 
 Using CCs 126 and 127 (see [MIDI Controls](#midi-controls)), you can toggle MONO mode, which means only 1 voice is active.
 
-## Managing Patches
+# Managing Patches {.page-break-before}
 
 The M0SS-416 has 2 kinds of presets, each with its own file type. The first type is the DX7 .syx Bank file, which contains 32 voices, and is essentially the data contained on an original DX7 Sound Cartridge. M0SS-416 can store 6 of these Banks on the SD card.
 
@@ -194,7 +196,7 @@ You may however load a voice from a Bank file, optionally modify it, and then sa
 
 Changing the Bank files on your M0SS-416 requires removing the SD card, connecting the SD Card to a computer, and copying files onto it like an external drive, using a special naming convention.
 
-### Bank Files
+## Bank Files
 
 Bank files are stored at /sysex/voice on the M0SS-416 SD Card.
 
@@ -211,7 +213,7 @@ M0SS-416 can access up to 6 Bank files at a time, for a total of 192 voices. M0S
 
 The names of these files determine the order that they will be loaded, and in turn, the order that they will be available in the Bank Load process. The first number that is seen in the filename gives the order so “0001_my_horns.syx” will load before “8_tims_drums.syx”, and “my_flute_5.syx” is not valid, because it starts with a letter. Only the first 6 valid .syx bank files will be loaded into the M0SS-416. In this example “0001_my_horns.syx” will be in Bank 1, “8_tims_drums.syx” will be in Bank 2, and Banks 3 through 6 will be empty (“my_flute_5.syx” will not load at all).
 
-### User Voices
+## User Voices
 
 User Voices are stored at /user in the M0SS-416 SD card.
 
@@ -219,7 +221,7 @@ These are a proprietary format called .uvx (which stands for User Voice Hex). It
 
 The naming convention for these files is simply 0.uvx to 99.uvx, where 0.uvx is loaded into slot 0, and 99.ovx is loaded into slot 99 at boot.
 
-### Loading Patches
+## Loading Patches
 
 M0SS-416 has 2 Loading modes, the first is Bank Load Mode, and the second is User Voice Load Mode. Pressing the LIB button activates Bank Load Mode, and pressing the USER button activates User Voice Load Mode (unless there are no User Voices in memory, in which case pressing this button does nothing).
 
@@ -231,29 +233,29 @@ In either Load Mode, turn the encoder to scroll through the presets, this will a
 
 Pressing any other button will exit Load Mode.
 
-### Saving User Voices
+## Saving User Voices
 
 To activate Save Mode press SAVE (ALT + USER). The User Voice slots that are occupied will glow green, the current slot will be yellow. A cursor is shown by a flashing red LED. Move the cursor using the encoder. Press the encoder button to save the preset to the slot indicated by the save cursor. This can overwrite a slot.
 
 The save procedure can be executed at any time. It is possible to copy a voice from a Bank, to modify an existing User Voice and save the changes to a new slot, or to use MIDI SYSEX to upload a single voice and save it to a User Voice slot.
 
-### Load Voice Data over MIDI SYSEX
+## Load Voice Data over MIDI SYSEX
 
 The M0SS-416 can receive voice parameters over MIDI SYSEX. Desktop and Web Tools like Synthmata and others will allow you to send single-voice patch data in this way. To execute this, simply connect your computer to the M0SS-416 using MIDI TRS, and send the MIDI SYSEX. The M0SS-416 will receive these commands, and you will now have that sound loaded. You must then save the voice to a User Preset if you want it to persist. After a successful SYSEX transfer, all LEDs will flash green, after a failure they will flash red.
 
 NOTE: Never attempt to connect your M0SS-416 to a computer using USB, the USB-A Host port is only safe to connect to USB “devices” (such as a keyboard) and not to USB “Host” like a computer. Doing so can potentially damage both devices.
 
-## Other Capabilities
+# Other Capabilities {.page-break-before}
 
 M0SS-416 has some additional capabilities controlled by special files on the SD Card, allowing you to control CC mappings, parameter defaults, Master FX, Pitch Bend range, microtuning scales, etc.,
 
-### Microtuning
+## Microtuning
 
 The /scales directory can be populated with up to 100 .scl files, these are Scala scale files which change the intonation of the notes that the M0SS-416 will produce. This capability is called microtuning, and it allows you to use historically accurate temperaments, temperments from various cultures across the world, experimental tunings, or to generate your own unique tunings and temperments.
 
 The default tuning is 12-TET, and this tuning always occupies slot 0. To change the tuning, select the MT-S parameter (ALT + LIB), and turn the encoder.
 
-### m0ss-config.txt
+## m0ss-config.txt
 
 This file controls the state of the M0SS-416 at boot. It allows several settings and parameters to persist after a reset of the device, including:
 
@@ -262,14 +264,14 @@ This file controls the state of the M0SS-416 at boot. It allows several settings
 - The Bank/Voice or User Voice.
 - The reverb mix and time.
 
-### performance.ini
+## performance.ini
 
 This file contains more settings which are currently experimental, including pitchbend range, portamento, glissando, note range limits, etc.. Experiment with these at your own risk.
 
-### m0ss-cc-map.txt
+## m0ss-cc-map.txt
 
 This file stores what parameter in the synth engine is controlled by each MIDI CC. There are some defaults, and they will be overwritten by MIDI Learn.
 
-### kernel8.img
+## kernel8.img
 
 This is the M0SS-416 firmware file. As updated and alternative firmwares become available, this is the file that will be updated on the SD Card. It must always be called exactly kernel8.img, so you will need to keep these files organized in some way, since the files names will not differentiate between them.

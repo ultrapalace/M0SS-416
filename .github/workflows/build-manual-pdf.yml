@@ -42,6 +42,7 @@ jobs:
             --headless \
             --disable-gpu \
             --no-sandbox \
+            --no-pdf-header-footer \
             --print-to-pdf=M0SS-416-manual.pdf \
             --print-to-pdf-no-header \
             "file://$PWD/M0SS-416-manual.html"
