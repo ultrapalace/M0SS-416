@@ -1,0 +1,41 @@
+name: Build manual PDF
+
+on:
+  push:
+    paths:
+      - "M0SS-416-manual.md"
+      - "manual.css"
+      - "images/**"
+      - ".github/workflows/build-manual-pdf.yml"
+  pull_request:
+    paths:
+      - "M0SS-416-manual.md"
+      - "manual.css"
+      - "images/**"
+      - ".github/workflows/build-manual-pdf.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Convert Markdown to PDF
+        uses: narthanaj/markdown-to-pdf-action@v2.0.0
+        with:
+          markdown_file: "M0SS-416-manual.md"
+          output_dir: "pdf-output"
+          css_file: "manual.css"
+          table_of_contents: "true"
+          include_metadata: "true"
+          output_filename: "M0SS-416-manual"
+          pdf_options: '{"format":"A4","margin":{"top":"50px","right":"50px","bottom":"50px","left":"50px"},"printBackground":true}'
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: M0SS-416-manual-pdf
+          path: pdf-output/M0SS-416-manual.pdf
