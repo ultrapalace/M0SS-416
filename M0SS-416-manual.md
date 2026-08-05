@@ -115,7 +115,7 @@ Time variation is handled by the DX7’s detailed envelope generators, with four
 
 ## Front Panel Overview {.page-break-before}
 
-![M0SS-416 front panel overview](images/M0SS-416-FACE-DIAGRAM-2.png)
+![M0SS-416 front panel overview](images/M0SS-416-FACE-DIAGRAM-2.png){width=600px}
 
 1. Global parameters for the engine
 2. Lib/User/Save/MT-S button for Loading and Saving presets and Microtuning scales.
@@ -129,7 +129,7 @@ Time variation is handled by the DX7’s detailed envelope generators, with four
 
 The DX7 synthesis engine consists of 6 operators in one of 32 configurations. These configurations are called algorithms. The following diagram describes these 32 algorithms.
 
-![DX7 algorithm diagram](images/dx7_algorithms.jpg)
+![DX7 algorithm diagram](images/dx7_algorithms.jpg){width=600px}
 
 To select the Algorithm for your patch, press ALGO (ALT + OP). The current algorithm number will display on the Numeric LEDs. Turn the encoder to change the Algorithm number.
 
@@ -139,7 +139,7 @@ The EN parameter enables/disables the current Operator. A disabled operator will
 
 The DX7 rate/level style envelope generator is more advanced then a typical ADSR. On M0SS-416, you will see level (LVL) and RATE controls. RATE is the ALT function for these buttons. This diagram helps to describe how they function.
 
-![DX7 envelope diagram](images/DX7-envelope.png)
+![DX7 envelope diagram](images/DX7-envelope.png){width=600px}
 
 ## Building a Patch
 
